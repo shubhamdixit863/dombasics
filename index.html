@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <div id="first">
+        <h1 id="kajal" class="color">Hello</h1>
+
+ 
+        <h2 class="color">Kajal</h2>
+    
+        <h1 id="kajal" >How are you doing?</h1>
+    
+        <h3 id="alpha">
+
+
+            <p id="a">
+                Something Not Colored
+            </p>
+
+        <p id="b">
+            Something Colored
+        </p>
+        </h3>
+    
+    
+        <p class="home">
+    
+            Stay At home
+        </p>
+    
+    
+    
+        <p class="home">
+    
+           Wash Your Hands
+        </p>
+    </div>
+
+    <div class="second">
+        <h1 id="kajal" class="color">Hello</h1>
+
+ 
+        <h2 class="color">Kajal</h2>
+    
+        <h1 id="kajal" >How are you doing?</h1>
+    
+        <h3 id="alpha">
+
+
+        </h3>
+    
+    
+        <p class="home">
+    
+            Stay At home
+        </p>
+    
+    
+    
+        <p class="home">
+    
+           Wash Your Hands
+        </p>
+    </div>
+    
+    <script>
+
+var kajal =document.getElementById("kajal");
+kajal.style.color="brown"
+
+
+let elementsClass=document.getElementsByClassName("color");
+
+//console.log(elementsClass)
+
+//elementsClass[0].style.color="pink"
+
+
+//elementsClass[1].style.color="pink"
+
+
+///  ---->
+
+
+
+
+
+let tagElements=document.getElementsByTagName("#first>h1");
+
+console.log(tagElements)
+
+for(let i=0;i<tagElements.length;i++)
+{
+    tagElements[i].style.color="blue"
+}
+
+/// get Elements by tag name
+
+
+let queryElement=document.querySelector("#first>#alpha>#b");
+
+queryElement.style.color="red"
+
+
+let queryElementClass=document.querySelectorAll("#first>.home");
+console.log(queryElementClass);
+
+for(let i=0;i<queryElementClass.length;i++)
+{
+    queryElementClass[i].style.color="magenta"
+}
+
+//queryElementClass.style.color="magenta"
+
+    </script>
+    
+</body>
+</html>
